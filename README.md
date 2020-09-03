@@ -2,7 +2,7 @@
 
 Shows in console/terminal or saves to a CSV file the current system's available cultures information.
 
-<p style="text-align:center;"><img src="imgs/DotNetAvailableCulturesInfo.png"></p>
+![](imgs/DotNetAvailableCulturesInfo.png)
 
 A .NET Core 3.1 app.
 
@@ -32,12 +32,7 @@ Take into account that:
 
 1. The generated file uses UTF-8 encoding and has **the UTF-8 BOM**. This enables Excel to recognize the correct encoding when opening the file.
 2. **If non-English versions of Excel** the separator is not a comma (for example, in Spanish is a semicolon), so if you double-click on it, Excel won't be able to interpret it corectly. Just go to the `Data`  tab and use the button: `From Text/CSV`.
-3. **The CSV file has all the headers in the first line**, but Excel ignores them by default. To use them as table headers just use the `Use First Row as Headers` button in the Power Query editor, like this:
-
-<p style="position:relative;width:100%;height:0;padding-bottom:56%;">
-<video style="position:absolute;left:0;top:0;width:100%;height:100%;" src="https://cdn.jsdelivr.net/gh/jmalarcon/DotNetAvailableCultureInfo/imgs/excel-fix-headers.mp4" controls></video>
-</p>
-
+3. **The CSV file has all the headers in the first line**, but Excel ignores them by default. To use them as table headers just use the `Use First Row as Headers` button in the Power Query editor, like shown [here](https://cdn.jsdelivr.net/gh/jmalarcon/DotNetAvailableCultureInfo/imgs/excel-fix-headers.mp4).
 
 Google Sheet imports the CSV flawlessly.
 
