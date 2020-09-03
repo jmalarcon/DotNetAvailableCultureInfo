@@ -26,6 +26,8 @@ DotNetAvailableCulturesInfo.exe -o cultures-list.csv
 
 You can then open it in Microsoft Excel, Google Sheets or any other CSV editing software.
 
+![The CSV file open in Microsoft Excel](imgs/open-in-excel.png)
+
 Take into account that:
 
 1. The generated file uses UTF-8 encoding and has **the UTF-8 BOM**. This enables Excel to recognize the correct encoding when opening the file.
@@ -33,8 +35,9 @@ Take into account that:
 3. **The CSV file has all the headers in the first line**, but Excel ignores them by default. To use them as table headers just use the `Use First Row as Headers` button in the Power Query editor, like this:
 
 <p style="position:relative;width:100%;height:0;padding-bottom:56%;">
-<video style="position:absolute;left:0;top:0;width:100%;height:100%;" src="imgs/excel-fix-headers.mp4" controls></video>
+<video style="position:absolute;left:0;top:0;width:100%;height:100%;" src="https://cdn.jsdelivr.net/gh/jmalarcon/DotNetAvailableCultureInfo/imgs/excel-fix-headers.mp4" controls></video>
 </p>
+
 
 Google Sheet imports the CSV flawlessly.
 
